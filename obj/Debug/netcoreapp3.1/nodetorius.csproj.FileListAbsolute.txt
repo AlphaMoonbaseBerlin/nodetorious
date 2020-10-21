@@ -1,0 +1,13 @@
+D:\repositories\csharp_repos\nodetorius\bin\Debug\netcoreapp3.1\nodetorius.exe
+D:\repositories\csharp_repos\nodetorius\bin\Debug\netcoreapp3.1\nodetorius.deps.json
+D:\repositories\csharp_repos\nodetorius\bin\Debug\netcoreapp3.1\nodetorius.runtimeconfig.json
+D:\repositories\csharp_repos\nodetorius\bin\Debug\netcoreapp3.1\nodetorius.runtimeconfig.dev.json
+D:\repositories\csharp_repos\nodetorius\bin\Debug\netcoreapp3.1\nodetorius.dll
+D:\repositories\csharp_repos\nodetorius\bin\Debug\netcoreapp3.1\nodetorius.pdb
+D:\repositories\csharp_repos\nodetorius\obj\Debug\netcoreapp3.1\nodetorius.csprojAssemblyReference.cache
+D:\repositories\csharp_repos\nodetorius\obj\Debug\netcoreapp3.1\nodetorius.AssemblyInfoInputs.cache
+D:\repositories\csharp_repos\nodetorius\obj\Debug\netcoreapp3.1\nodetorius.AssemblyInfo.cs
+D:\repositories\csharp_repos\nodetorius\obj\Debug\netcoreapp3.1\nodetorius.csproj.CoreCompileInputs.cache
+D:\repositories\csharp_repos\nodetorius\obj\Debug\netcoreapp3.1\nodetorius.dll
+D:\repositories\csharp_repos\nodetorius\obj\Debug\netcoreapp3.1\nodetorius.pdb
+D:\repositories\csharp_repos\nodetorius\obj\Debug\netcoreapp3.1\nodetorius.genruntimeconfig.cache
