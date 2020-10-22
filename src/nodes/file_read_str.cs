@@ -9,8 +9,7 @@ namespace nodes{
 
         //-- Init --//
 
-        public File_Read_String( string name = "Default File Read", string filepath = "" ): base(name){
-            this.parameters.Filepath.static_value = filepath;
+        public File_Read_String( string name = "Default File Read"): base(name){
         }
 
         //-- Node Logic Definition --//
