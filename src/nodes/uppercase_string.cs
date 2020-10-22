@@ -6,12 +6,8 @@ using generics;
 namespace nodes{
 
     public class Uppercase_String:Node{
-        public Uppercase_String( string name ): base(name){
+        public Uppercase_String( string name = "Default Uppercase" ): base(name){
             this.parameters.Text_Content.static_value = "Not so fast my boy";
-        }
-
-        public override void tick( long tick_index ){
-            Console.WriteLine( this.parameters.Text_Content.calculate() );
         }
 
         public new struct input_struct

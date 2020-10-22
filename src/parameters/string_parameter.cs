@@ -8,7 +8,7 @@ namespace parameters{
 
         }
         
-        public override string calculate(){
+        public override string _calculate(){
             return this.static_value;
         }
         

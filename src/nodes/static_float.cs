@@ -5,29 +5,28 @@ using generics;
 
 namespace nodes{
 
-    public class Static_String:Node{
-        public Static_String( string name = "Default Static String" ): base(name){
-            this.parameters.Text_Content.static_value = "Not so fast my boy";
+    public class Static_Float:Node{
+        public Static_Float( string name = "Default Static String" ): base(name){
         }
 
         //Output Definition
         public new struct output_struct{
-            public Output<string> Formated_Text;
+            public Output<float> Static_Float;
         };
         public new output_struct outputs = new output_struct();
         
         public override void init_outputs(){
-            this.outputs.Formated_Text = new Output<string>(this, () => { return this.parameters.Text_Content.calculate();}) ;
+            this.outputs.Static_Float = new Output<float>(this, () => { return this.parameters.Float_Value.calculate();}) ;
         }
         
         // Parameter Definition
         public new struct parameter_struct{
-            public String_Parameter Text_Content;
+            public Float_Parameter Float_Value;
         }
         public new parameter_struct parameters = new parameter_struct();
         
         public override void init_params(){
-            this.parameters.Text_Content = new String_Parameter("Text Content", "Hello World");
+            this.parameters.Float_Value = new Float_Parameter("Text Content", 1.0f);
         }
     }
 

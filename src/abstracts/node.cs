@@ -6,14 +6,14 @@ namespace abstracts
     abstract public class Node{
         string name;
 
-        public Node(string name){
+        public Node(string name = "Default Name"){
             this.name = name;
             this.init_inputs();
             this.init_outputs();
             this.init_params();
         }
         
-        public abstract void tick( Int64 tick_index );
+        public virtual void tick( Int64 tick_index ){}
         public virtual void init_params(){}
         public virtual void init_outputs(){}
         public virtual void init_inputs(){}
@@ -29,5 +29,7 @@ namespace abstracts
         public struct parameter_struct{};
         public parameter_struct parameters;
 
+        public struct callback_struct{};
+        public callback_struct callbacks;
     }
 }
