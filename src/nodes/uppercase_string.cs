@@ -5,13 +5,24 @@ using generics;
 
 namespace nodes{
 
-    public class Static_String:Node{
-        public Static_String( string name ): base(name){
+    public class Uppercase_String:Node{
+        public Uppercase_String( string name ): base(name){
             this.parameters.Text_Content.static_value = "Not so fast my boy";
         }
 
         public override void tick( long tick_index ){
             Console.WriteLine( this.parameters.Text_Content.calculate() );
+        }
+
+        public new struct input_struct
+        {
+            public Input<string> Input_Text;
+        }
+        public new input_struct inputs = new input_struct();
+
+        public override void init_inputs()
+        {
+            this.inputs.Input_Text = new Input<string>(this);
         }
 
         //Output Definition
@@ -21,7 +32,7 @@ namespace nodes{
         public new output_struct outputs = new output_struct();
         
         public override void init_outputs(){
-            this.outputs.Formated_Text = new Output<string>(this, () => { return this.parameters.Text_Content.calculate();}) ;
+            this.outputs.Formated_Text = new Output<string>(this, () => { return this.inputs.Input_Text.calculate().ToUpper();}) ;
         }
         
         // Parameter Definition

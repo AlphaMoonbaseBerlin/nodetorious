@@ -17,9 +17,15 @@ namespace abstracts
         public virtual void init_params(){}
         public virtual void init_outputs(){}
         public virtual void init_inputs(){}
-        public Input[] inputs;
+        
+        protected struct storage {};
+
+        public struct input_struct{};
+        public input_struct inputs;
+
         public struct output_struct{};
         public output_struct outputs; 
+
         public struct parameter_struct{};
         public parameter_struct parameters;
 
